@@ -10,7 +10,7 @@ public class DumbAIControls : MonoBehaviour
     void Update()
     {
         float step = speed * Time.deltaTime; // m/s * s = m
-        transform.position = Vector2.MoveTowards(transform.position, new Vector2(target.position.x, target.position.y), step);
+        transform.position = Vector2.MoveTowards(transform.position, new Vector2(transform.position.x, target.position.y), step);
         /**
         * @param Vector2    current
         * @param Vector2    target
