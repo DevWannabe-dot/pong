@@ -34,4 +34,15 @@ public class BallMovement : MonoBehaviour
             multiplier *= 1.01f;
         }
     }
+    void OnTriggerEnter2D(Collider2D col)
+    {
+        if(col.gameObject.CompareTag("GolContra"))
+        {
+            GameManager.Instance.CPUScored(); // saudades Scratch
+        }
+        else if (col.gameObject.CompareTag("golFavor"))
+        {
+            GameManager.Instance.Player1Scored();
+        }
+    }
 }

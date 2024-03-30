@@ -680,7 +680,7 @@ GameObject:
   - component: {fileID: 613672407}
   m_Layer: 0
   m_Name: Player1Goal
-  m_TagString: Untagged
+  m_TagString: GolContra
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -781,7 +781,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -924,7 +924,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 10
-  multiplier: 1.06
+  multiplier: 1.01
 --- !u!61 &656391417
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1285,7 +1285,7 @@ GameObject:
   - component: {fileID: 1207340458}
   m_Layer: 0
   m_Name: CPUGoal
-  m_TagString: Untagged
+  m_TagString: GolFavor
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1386,7 +1386,7 @@ BoxCollider2D:
   m_CallbackLayers:
     serializedVersion: 2
     m_Bits: 4294967295
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
@@ -1402,6 +1402,57 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1252868147
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1252868149}
+  - component: {fileID: 1252868148}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1252868148
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252868147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bec4d8ac5f50832c9a2113aa65be945c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Player1ScoreText: {fileID: 1920302552}
+  CPUScoreText: {fileID: 535090228}
+  Player1Transform: {fileID: 701446089}
+  CPUTransform: {fileID: 1600557958}
+  BallTransform: {fileID: 656391415}
+  Player1Score: 0
+  CPUScore: 0
+--- !u!4 &1252868149
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1252868147}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -5.6722994, y: 1.3186764, z: 8.239701}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1598608405
 GameObject:
   m_ObjectHideFlags: 0
@@ -1471,7 +1522,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 2
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 519420031}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -1827,3 +1878,4 @@ SceneRoots:
   - {fileID: 199531469}
   - {fileID: 1598608409}
   - {fileID: 178957528}
+  - {fileID: 1252868149}
