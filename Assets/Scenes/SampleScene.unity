@@ -605,6 +605,7 @@ GameObject:
   - component: {fileID: 656391414}
   - component: {fileID: 656391413}
   - component: {fileID: 656391412}
+  - component: {fileID: 656391416}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -628,7 +629,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 0
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 9238b1e6346872fa3b3355fb308ee795, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -751,6 +752,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &656391416
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 656391411}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 184014ce72e09c3729fbbd019eaa48eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
 --- !u!1 &675539681
 GameObject:
   m_ObjectHideFlags: 0
@@ -893,6 +907,7 @@ GameObject:
   - component: {fileID: 701446090}
   - component: {fileID: 701446092}
   - component: {fileID: 701446091}
+  - component: {fileID: 701446093}
   m_Layer: 0
   m_Name: Player1
   m_TagString: Player
@@ -1039,6 +1054,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &701446093
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 701446088}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d58e49fcbbcf68e7b178cae7de5a60b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 10
+  axis: Vertical
 --- !u!1 &1207340455
 GameObject:
   m_ObjectHideFlags: 0
@@ -1181,6 +1210,7 @@ GameObject:
   - component: {fileID: 1600557959}
   - component: {fileID: 1600557961}
   - component: {fileID: 1600557960}
+  - component: {fileID: 1600557962}
   m_Layer: 0
   m_Name: CPU
   m_TagString: Untagged
@@ -1281,7 +1311,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 5
 --- !u!61 &1600557961
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1327,6 +1357,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &1600557962
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1600557957}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f16c6eb888e68dc489c774189b778697, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 656391415}
+  speed: 10
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
